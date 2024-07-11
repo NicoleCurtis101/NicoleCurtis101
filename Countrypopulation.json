@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ 
+  "title": {"text": "Country Population 2024"},
+ 
+  "width": 400,
+  "height": 300,
+   
+  "data": {
+    "values": [
+        {"Country": "India","Country Population": 	1428627663},
+        {"Country": "China.","Country Population": 1425671352},
+        {"Country": "US","Country Population": 339996563},
+        {"Country": "Indinesia","Country Population": 277534122},
+        {"Country": "Nigeria","Country Population":	223804632},
+        {"Country": "Brazil","Country Population": 216422446}]
+  },
+ 
+ 
+  "mark": {
+    "type": "line",
+    "color": "pink"},
+ 
+  "encoding": {
+    "x": {"field": "Country"},  
+ 
+    "y": {
+      "field": "Country Population",
+      "type": "quantitative"}}
+}
